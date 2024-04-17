@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+/* src/styles.css */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #370526;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 #595959, 1px -1px 0 #595959, -1px 1px 0 #595959,
+    1px 1px 0 #595959;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.container > div {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #be549b;
+  margin: 12px;
+  border-radius: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+  color: antiquewhite;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #5b0940ca;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #faebd7;
+  color: #1d1d1d;
+  cursor: pointer;
+  border-radius: 12px;
+  margin: 6px;
+}
+
+button:hover {
+  background-color: #6e7272;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.add {
+  margin: 12px;
+  border-radius: 12px;
+  color: #1c1c1c;
+  background-color: #faebd7;
+}
+
+p {
+  color: #faebd7;
+}
+
+.search {
+  width: 70%;
+
+  height: 34px;
+  border-radius: 8px;
+  margin: 24px;
+}
+
+.fav {
+  border-radius: 24px;
+  float: right;
+  margin-top: -12px;
+}
+
+.music {
+  padding: 20px;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  background-color: #faebd7c6;
+}
+
+.newsong {
+  height: 38px;
+  margin: 4px;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.close {
+  font-size: 38px;
+  color: #232323;
+}
+
+select {
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
   }
 }

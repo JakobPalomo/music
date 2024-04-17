@@ -1,0 +1,36 @@
+// function MusicListBox({ music }) { // return ( //
+<div className="container">
+  //
+  <h2>Music List</h2>
+  // <Music music="{music}" /> //
+</div>
+// ); // } // function PlaylistBox() { // return ( //
+<div className="container">
+  //
+  <h2>Playlist</h2>
+  // <Playlist /> //
+</div>
+// ); // } // //stateless / presentational component // //stateful component //
+//structural component // function App() { // return ( //
+<div>
+  //
+  <Modal>
+    // <Success /> //
+    <p>Yippieeee</p>
+    //
+  </Modal>
+  //
+  <Modal>
+    // <Error /> //
+    <p>NOuuuu</p>
+    //
+  </Modal>
+  //
+</div>
+// ); // } // export default App; // function Modal({ children }) { // return
+<div>{children}</div>
+; // } // function Success() { // return
+<p>Congratulations</p>
+; // } // function Error() { // return
+<p>Sorry Error!</p>
+; // }
